@@ -1,0 +1,99 @@
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f4f7fb;
+}
+
+h1 {
+  margin-top: 20px;
+  color: #333;
+}
+
+h3 {
+  color: #333;
+  margin-top: 30px;
+}
+
+/* Estilo para mostrar errores */
+.error-message {
+  color: red;
+  font-size: 16px;
+  margin-bottom: 1em;
+}
+
+/* Estilo para el formulario */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  margin-top: 20px;
+}
+
+/* Estilo para el input de archivo */
+input[type="file"] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Estilo para el botón */
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+/* Tabla de facturas */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  font-size: 14px;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+/* Diseño responsivo: ajusta la tabla a pantallas pequeñas */
+@media (max-width: 768px) {
+  table {
+    font-size: 12px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+}
